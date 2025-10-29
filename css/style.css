@@ -340,3 +340,52 @@ section:nth-of-type(even), section:last-of-type {
     height: 100%;
     object-fit: cover;
 }
+
+/* Inspiration */
+.inspiration {
+    padding: 92px 0;
+}
+
+.inspiration .section__title {
+    text-align: center;
+}
+
+.inspiration__features {
+    display: flex;
+    gap: 48px;
+    margin-top: 80px;
+}
+
+.inspiration__feature {
+    flex: 1;
+}
+
+.inspiration__image-wrapper {
+    width: 100%;
+    height: 242px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.inspiration__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inspiration .section__subtitle {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.inspiration .section__text {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.inspiration__button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}

@@ -389,3 +389,60 @@ section:nth-of-type(even), section:last-of-type {
     align-items: center;
     margin-top: 16px;
 }
+
+/* Impact */
+.impact {
+    padding: 92px 0;
+}
+
+.impact__content {
+    display: flex;
+    gap: 80px;
+}
+
+.impact__info {
+    flex: 1;
+}
+
+.impact .section__intro-text {
+    margin-top: 16px;
+}
+
+.impact__features {
+    display: flex;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.impact__feature {
+    flex: 1;
+}
+
+.impact__subtitle {
+    font-weight: 700;
+    font-size: var(--font-4xl);
+}
+
+.impact .section__text {
+    margin-top: 16px;
+}
+
+.impact__buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.impact__image-wrapper {
+    flex: 1;
+    width: 100%;
+    height: 601px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.impact__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

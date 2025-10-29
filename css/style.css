@@ -6,11 +6,12 @@
 
 :root {
     --color-primary: #000000;
-    --color-secondary: #FFFFFF;
-    --color-text: #000000;
-    --color-text-light: #676767;
-    --color-bg: #FFFFFF;
-    --color-bg-light: #F9F8FE;
+    --color-secondary: #ffffff;
+    --color-text-primary: #000000;
+    --color-text-secondary: #ffffff;
+    --color-text-tertiary: #676767;
+    --color-bg: #ffffff;
+    --color-bg-light: #f9f8fe;
 
     --font-primary: 'Montserrat';
     --font-secondary: 'Poppins';
@@ -20,19 +21,21 @@
 
     --font-xs: 0.75rem; /* 12px */
     --font-sm: 0.875rem; /* 14px */
-    --font-md: 1rem; /* 16px */
+    --font-base: 1rem; /* 16px */
+    --font-md: 1.125rem; /* 18px */
     --font-lg: 1.25rem; /* 20px */
     --font-xl: 1.5rem; /* 24px */
+    --font-4xl: 3.25rem; /* 52px */
 }
 
 html {
-    font-size: var(--font-md);
+    font-size: var(--font-base);
     line-height: 1.6;
 }
 
 body {
     font-family: var(--font-secondary), sans-serif;
-    color: var(--color-text);
+    color: var(--color-text-primary);
     background-color: var(--color-bg);
 }
 
@@ -41,13 +44,47 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container */
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+/* Buttons */
 button {
     font-family: var(--font-tertiary), sans-serif;
     font-weight: 600;
     font-size: var(--font-sm);
     cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 8px;
+    min-height: 40px;
 }
 
+.button__primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
+}
+
+.button__outlined {
+    background-color: var(--color-secondary);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.button__text {
+
+}
+
+/* Header */
 .header {
     background-color: var(--color-bg);
 }
@@ -56,7 +93,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 14px 24px;
 }
 
@@ -68,6 +104,8 @@ button {
 
 .header__nav-link {
     font-family: var(--font-tertiary), sans-serif;
+    line-height: 1;
+    padding: 0 8px;
 }
 
 .header__nav-link:hover {
@@ -76,7 +114,51 @@ button {
 
 .header__button {
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-text-secondary);
     padding: 8px 24px;
     border-radius: 8px;
+}
+
+
+/* Hero */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__image {
+    max-height: 595px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.main__content {
+    display: flex;
+    padding: 74px 0 70px;
+}
+
+.main__title {
+    flex: 1;
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 700;
+    font-size: var(--font-4xl);
+    line-height: 1.28;
+}
+
+.main__description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 74px;
+    padding-right: 40px;
+}
+
+.main__subtitle {
+    font-size: var(--font-md);
+}
+
+.main__buttons {
+    display: flex;
+    gap: 16px;
 }

@@ -227,3 +227,57 @@ section:nth-of-type(even), section:last-of-type {
     object-fit: cover;
     object-position: center;
 }
+
+/* Power section */
+.power {
+    padding: 108px 0;
+}
+
+.power__info {
+    max-width: 848px;
+}
+
+.power .section__title {
+    margin-top: 16px;
+}
+
+.power .section__intro-text {
+    margin-top: 20px;
+}
+
+.power__features {
+    display: flex;
+    gap: 48px;
+    margin-top: 80px;
+}
+
+.power__feature {
+    flex: 1;
+}
+
+.power__image-wrapper {
+    width: 100%;
+    height: 222px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.power__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.power .section__subtitle {
+    margin-top: 16px;
+}
+
+.power .section__text {
+    margin-top: 16px;
+}
+
+.power__buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 80px;
+}

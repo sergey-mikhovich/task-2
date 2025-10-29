@@ -27,7 +27,7 @@
 
     <main>
         <section class="main">
-            <img src="public/images/main.webp" alt="Main image" class="main__image" />
+            <img src="public/images/main.webp" alt="Main image" class="main__image" loading="eager"/>
             <div class="container">
                 <div class="main__content">
                     <h1 class="section__title">
@@ -68,7 +68,44 @@
                             <button class="button--text">Sign Up <span>></span></button>
                         </div>
                     </div>
-                    <img src="public/images/race_start.webp" alt="Race start" class="new-way__image" />
+                    <img src="public/images/race_start.webp" alt="Race start" class="new-way__image" loading="lazy"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="power">
+            <div class="container">
+                <div class="power__info">
+                    <p class="section__label">Discover</p>
+                    <h2 class="section__title">Unlock the Power of LifeBlend Hub</h2>
+                    <p class="section__intro-text">LifeBlend Hub is your one-stop destination for all things related to health, productivity, leisure, and personal growth. Explore our comprehensive blend of content and resources to enhance and inspire every facet of your lifestyle.</p>
+                </div>
+                <div class="power__features">
+                    <article class="power__feature">
+                        <div class="power__image-wrapper">
+                            <img src="public/images/running-track.webp" alt="Running Track" class="power__image" loading="lazy" />
+                        </div>
+                        <h3 class="section__subtitle">Health and Wellness</h3>
+                        <p class="section__text">Discover expert advice and tips on maintaining a healthy lifestyle.</p>
+                    </article>
+                    <article class="power__feature">
+                        <div class="power__image-wrapper">
+                            <img src="public/images/basketball-hoop.webp" alt="Basketball Hoop" class="power__image" loading="lazy" />
+                        </div>
+                        <h3 class="section__subtitle">Boost Your Productivity</h3>
+                        <p class="section__text">Learn effective strategies to maximize your productivity and achieve your goals.</p>
+                    </article>
+                    <article class="power__feature">
+                        <div class="power__image-wrapper">
+                            <img src="public/images/basketball-court.webp" alt="Basketball Court" class="power__image" loading="lazy"/>
+                        </div>
+                        <h3 class="section__subtitle">Find Joy in Leisure</h3>
+                        <p class="section__text">Discover exciting activities and hobbies to make the most of your leisure time.</p>
+                    </article>
+                </div>
+                <div class="power__buttons">
+                    <button class="button--outlined">Join</button>
+                    <button class="button--text">Learn More <span>></span></button>
                 </div>
             </div>
         </section>

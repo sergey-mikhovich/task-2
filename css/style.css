@@ -151,8 +151,15 @@ section:nth-of-type(even), section:last-of-type {
     padding-bottom: 70px;
 }
 
+.main__image-wrapper {
+    width: 100%;
+    height: 595px;
+    overflow: hidden;
+}
+
 .main__image {
-    max-height: 595px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: bottom;
 }
@@ -191,6 +198,7 @@ section:nth-of-type(even), section:last-of-type {
 }
 
 .new-way__info {
+    flex: 1;
     padding: 20px 0;
 }
 
@@ -220,12 +228,18 @@ section:nth-of-type(even), section:last-of-type {
     margin-top: 48px;
 }
 
-.new-way__image {
-    width: 601px;
+.new-way__image-wrapper {
+    flex: 1;
+    width: 100%;
     height: 601px;
+    overflow: hidden;
     border-radius: 8px;
+}
+
+.new-way__image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
 /* Power section */
@@ -280,4 +294,49 @@ section:nth-of-type(even), section:last-of-type {
     display: flex;
     gap: 16px;
     margin-top: 80px;
+}
+
+/* Secrets section */
+.secrets {
+    padding: 111px 0;
+}
+
+.secrets__content {
+    display: flex;
+    gap: 80px;
+}
+
+.secrets__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secrets .section__title {
+    margin-top: 16px;
+}
+
+.secrets .section__intro-text {
+    margin-top: 20px;
+}
+
+.secrets__buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.secrets__image-wrapper {
+    flex: 1;
+    width: 100%;
+    height: 601px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.secrets__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

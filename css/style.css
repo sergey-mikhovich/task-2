@@ -83,7 +83,7 @@ html {
     font-weight: 600;
     font-size: var(--text-sm);
     cursor: pointer;
-    padding: 10px 23px;
+    padding: 10px 24px;
     border-radius: 8px;
     line-height: normal;
     min-height: 40px;
@@ -93,6 +93,7 @@ html {
 .button_primary {
     background-color: var(--color-primary);
     color: var(--color-secondary);
+    border: none;
 }
 
 .button_outlined {
@@ -171,7 +172,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 24px;
+    padding: 14px 20px;
 }
 
 .header__nav-list {
@@ -497,6 +498,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 
 /* Updates */
@@ -735,6 +737,10 @@ html {
     }
 
     /* Header */
+    .header__container {
+        padding: 14px 24px;
+    }
+
     .header__nav-item {
         display: block;
     }

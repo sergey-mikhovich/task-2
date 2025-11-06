@@ -224,51 +224,51 @@ html {
 
 /* New way section*/
 .new-way {
-    padding: 109px 0 108px;
+    padding: 48px 0;
 }
 
 .new-way__content {
     display: flex;
-    align-items: center;
-    gap: 80px;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .new-way__info {
-    flex: 1;
-    padding: 20px 0;
-    margin-top: 5px;
+    padding: 0;
+    margin-top: 0;
 }
 
 .new-way .section__title {
-    margin-top: 22px;
+    margin-top: 16px;
 }
 
 .new-way .section__intro-text {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .new-way__features {
     display: flex;
-    gap: 16px;
-    margin-top: 52px;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
 }
 
 .new-way__feature {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
 }
 
 .new-way__buttons {
     display: flex;
-    gap: 16px;
-    margin-top: 48px;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
 }
 
 .new-way__image-wrapper {
-    flex: 1;
     width: 100%;
-    height: 601px;
+    height: 300px;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -683,7 +683,10 @@ html {
 }
 
 @media (min-width: 600px) {
-
+    /* New way section */
+    .new-way__image-wrapper {
+        height: 450px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -741,10 +744,43 @@ html {
         flex-direction: row;
         gap: 16px;
     }
+
+    /* New way section */
+    .new-way {
+        padding: 80px 0;
+    }
+
+    .new-way__content {
+        align-items: center;
+        gap: 48px;
+    }
+
+    .new-way__features {
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    .new-way__buttons {
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 900px) {
+    /* New way section */
+    .new-way__content {
+        flex-direction: row;
+    }
 
+    .new-way__info {
+        flex: 1;
+    }
+
+    .new-way__image-wrapper {
+        flex: 1;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -781,5 +817,43 @@ html {
 
     .main .section__intro-text {
         padding-right: 40px;
+    }
+
+    /* New way section */
+    .new-way {
+        padding: 109px 0 108px;
+    }
+
+    .new-way__content {
+        gap: 80px;
+    }
+
+    .new-way__info {
+        padding: 20px 0;
+        margin-top: 5px;
+    }
+
+    .new-way .section__title {
+        margin-top: 22px;
+    }
+
+    .new-way .section__intro-text {
+        margin-top: 20px;
+    }
+
+    .new-way__features {
+        margin-top: 52px;
+    }
+
+    .new-way__feature {
+        gap: 18px;
+    }
+
+    .new-way__buttons {
+        margin-top: 48px;
+    }
+
+    .new-way__image-wrapper {
+        height: 601px;
     }
 }

@@ -333,44 +333,43 @@ html {
 
 /* Secrets section */
 .secrets {
-    padding: 111px 0 112px;
+    padding: 48px 0;
 }
 
 .secrets__content {
     display: flex;
-    align-items: center;
-    gap: 80px;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .secrets__info {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .secrets .section__label {
-    margin-top: 6px;
+    margin-top: 0;
 }
 
 .secrets .section__title {
-    margin-top: 22px;
+    margin-top: 16px;
 }
 
 .secrets .section__intro-text {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .secrets__buttons {
     display: flex;
-    gap: 16px;
-    margin-top: 48px;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
 }
 
 .secrets__image-wrapper {
-    flex: 1;
     width: 100%;
-    height: 601px;
+    height: 300px;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -685,6 +684,11 @@ html {
     .new-way__image-wrapper {
         height: 450px;
     }
+
+    /* Secrets section */
+    .secrets__image-wrapper {
+        height: 450px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -793,6 +797,22 @@ html {
         gap: 16px;
         margin-top: 60px;
     }
+
+    /* Secrets section */
+    .secrets {
+        padding: 80px 0;
+    }
+
+    .secrets__content {
+        align-items: center;
+        gap: 48px;
+    }
+
+    .secrets__buttons {
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -806,6 +826,19 @@ html {
     }
 
     .new-way__image-wrapper {
+        flex: 1;
+    }
+
+    /* Secrets section */
+    .secrets__content {
+        flex-direction: row;
+    }
+
+    .secrets__info {
+        flex: 1;
+    }
+
+    .secrets__image-wrapper {
         flex: 1;
     }
 }
@@ -920,5 +953,34 @@ html {
 
     .power__buttons {
         margin-top: 80px;
+    }
+
+    /* Secrets section */
+    .secrets {
+        padding: 111px 0 112px;
+    }
+
+    .secrets__content {
+        gap: 80px;
+    }
+
+    .secrets .section__label {
+        margin-top: 6px;
+    }
+
+    .secrets .section__title {
+        margin-top: 22px;
+    }
+
+    .secrets .section__intro-text {
+        margin-top: 20px;
+    }
+
+    .secrets__buttons {
+        margin-top: 48px;
+    }
+
+    .secrets__image-wrapper {
+        height: 601px;
     }
 }

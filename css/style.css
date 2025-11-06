@@ -519,42 +519,38 @@ html {
 
 /* Contacts */
 .contacts {
-    padding: 90px 0;
+    padding: 48px 0;
 }
 
 .contacts__content {
     display: flex;
-    gap: 80px;
-}
-
-.contacts__info {
-    flex: 1;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .contacts .section__label {
-    margin-top: 2px;
+    margin-top: 0;
 }
 
 .contacts .section__title {
-    margin-top: 19px;
+    margin-top: 16px;
 }
 
 .contacts .section__intro-text {
-    margin-top: 18px;
+    margin-top: 16px;
 }
 
 .contacts__list {
     display: flex;
     flex-direction: column;
-    gap: 48px;
-    margin-top: 47px;
+    gap: 32px;
+    margin-top: 32px;
 }
 
 .contacts__address {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-style: normal;
 }
 
 .contacts__icon {
@@ -571,14 +567,14 @@ html {
     display: flex;
     justify-content: start;
     margin-top: 4px;
+    width: auto;
 }
 
 .contacts__image-wrapper {
-    flex: 1;
-    place-self: flex-end;
-    margin-bottom: 62px;
+    place-self: center;
+    margin-bottom: 0;
     width: 100%;
-    height: 442px;
+    height: 300px;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -679,6 +675,11 @@ html {
 
     /* Impact section */
     .impact__image-wrapper {
+        height: 450px;
+    }
+
+    /* Contacts section */
+    .contacts__image-wrapper {
         height: 450px;
     }
 }
@@ -875,6 +876,20 @@ html {
     .updates__input {
         flex: 1;
     }
+
+    /* Contacts */
+    .contacts {
+        padding: 80px 0;
+    }
+
+    .contacts__content {
+        gap: 48px;
+    }
+
+    .contacts__image-wrapper {
+        place-self: flex-end;
+        margin-bottom: 40px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -914,6 +929,19 @@ html {
     }
 
     .impact__image-wrapper {
+        flex: 1;
+    }
+
+    /* Contacts section */
+    .contacts__content {
+        flex-direction: row;
+    }
+
+    .contacts__info {
+        flex: 1;
+    }
+
+    .contacts__image-wrapper {
         flex: 1;
     }
 }
@@ -1129,5 +1157,36 @@ html {
 
     .updates__text {
         margin-top: 16px;
+    }
+
+    /* Contacts */
+    .contacts {
+        padding: 90px 0;
+    }
+
+    .contacts__content {
+        gap: 80px;
+    }
+
+    .contacts .section__label {
+        margin-top: 2px;
+    }
+
+    .contacts .section__title {
+        margin-top: 19px;
+    }
+
+    .contacts .section__intro-text {
+        margin-top: 18px;
+    }
+
+    .contacts__list {
+        gap: 48px;
+        margin-top: 47px;
+    }
+
+    .contacts__image-wrapper {
+        margin-bottom: 62px;
+        height: 442px;
     }
 }

@@ -186,6 +186,24 @@ html {
     padding: 0 8px;
 }
 
+.header__nav-item {
+    display: none;
+}
+
+.header__nav-item_first {
+    display: block;
+}
+
+.header .button {
+    display: none;
+}
+
+.header__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-primary);
+}
+
 /* Main section*/
 .main {
     padding-bottom: 48px;
@@ -714,6 +732,19 @@ html {
 
     .input {
         width: auto;
+    }
+
+    /* Header */
+    .header__nav-item {
+        display: block;
+    }
+
+    .header .button {
+        display: block;
+    }
+
+    .header__icon {
+        display: none;
     }
 
     /* Main section */

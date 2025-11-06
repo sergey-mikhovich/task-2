@@ -281,34 +281,31 @@ html {
 
 /* Power section */
 .power {
-    padding: 110px 0 105px;
+    padding: 48px 0;
 }
 
 .power__info {
-    max-width: 848px;
+    max-width: 100%;
 }
 
 .power .section__title {
-    margin-top: 22px;
+    margin-top: 16px;
 }
 
 .power .section__intro-text {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .power__features {
     display: flex;
-    gap: 48px;
-    margin-top: 80px;
-}
-
-.power__feature {
-    flex: 1;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 40px;
 }
 
 .power__image-wrapper {
     width: 100%;
-    height: 222px;
+    height: 300px;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -320,17 +317,18 @@ html {
 }
 
 .power .section__subtitle {
-    margin-top: 19px;
+    margin-top: 16px;
 }
 
 .power .section__text {
-    margin-top: 18px;
+    margin-top: 8px;
 }
 
 .power__buttons {
     display: flex;
-    gap: 16px;
-    margin-top: 80px;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
 }
 
 /* Secrets section */
@@ -766,6 +764,35 @@ html {
         gap: 16px;
         margin-top: 40px;
     }
+
+    /* Power section */
+    .power {
+        padding: 80px 0;
+    }
+
+    .power__info {
+        max-width: 700px;
+    }
+
+    .power__features {
+        flex-direction: row;
+        gap: 32px;
+        margin-top: 60px;
+    }
+
+    .power__image-wrapper {
+        height: 200px;
+    }
+
+    .power__feature {
+        flex: 1;
+    }
+
+    .power__buttons {
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 60px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -855,5 +882,43 @@ html {
 
     .new-way__image-wrapper {
         height: 601px;
+    }
+
+    /* Power section */
+    .power {
+        padding: 110px 0 105px;
+    }
+
+    .power__info {
+        max-width: 848px;
+    }
+
+    .power .section__title {
+        margin-top: 22px;
+    }
+
+    .power .section__intro-text {
+        margin-top: 20px;
+    }
+
+    .power__features {
+        gap: 48px;
+        margin-top: 80px;
+    }
+
+    .power__image-wrapper {
+        height: 222px;
+    }
+
+    .power .section__subtitle {
+        margin-top: 19px;
+    }
+
+    .power .section__text {
+        margin-top: 18px;
+    }
+
+    .power__buttons {
+        margin-top: 80px;
     }
 }

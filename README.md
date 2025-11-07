@@ -30,13 +30,23 @@ Open the index.html file in your preferred web browser.
 
 <br/>**Lighthouse Audit Results**
 
-Desktop Performance:
+Desktop:
 
 <img src="public/images/lighthouse-desktop.png" alt="Lighthouse Desktop Performance">
 
-Mobile Performance:
+Mobile:
 
 <img src="public/images/lighthouse-mobile.png" alt="Lighthouse Mobile Performance">
+
+<br/>**PageSpeed Insights**
+
+Desktop:
+
+<img src="public/images/pagespeed-desktop.png" alt="PageSpeed Insights Desktop Performance">
+
+Mobile:
+
+<img src="public/images/pagespeed-mobile.png" alt="PageSpeed Insights Mobile Performance">
 
 <br/>**WAVE Accessibility Evaluation**
 

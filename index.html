@@ -21,8 +21,36 @@
                     <li class="header__nav-item"><a href="#" class="link header__nav-link">Contact us</a></li>
                 </ul>
             </nav>
-            <button class="button button_primary header__button">Contact us</button>
-            <svg class="header__icon"><use href="public/icons/icons-sprite.svg#burger"></use></svg>
+            <button class="button button_primary header__button_desktop">Contact us</button>
+            <button class="button button_text header__button_mobile">
+                <a href="#header__menu_mobile" class="header__button_link" aria-label="Open menu">
+                    <svg class="header__button-icon_mobile">
+                        <use href="public/icons/icons-sprite.svg#burger"></use>
+                    </svg>
+                </a>
+            </button>
+        </div>
+
+
+        <div id="header__menu_mobile" class="header__modal" role="dialog" aria-modal="true" aria-labelledby="header-mobile-menu-title">
+            <a href="#" class="header__modal-overlay" aria-label="Close menu"></a>
+            <div class="header__modal-content">
+                <button class="button button_text header__modal-button">
+                    <a href="#" class="header__modal-button_link" aria-label="Close menu">
+                        <svg class="header__button-icon_mobile">
+                            <use href="public/icons/icons-sprite.svg#close"></use>
+                        </svg>
+                    </a>
+                </button>
+                <nav class="header__modal-navigation" aria-label="Mobile navigation">
+                    <ul class="header__modal-list">
+                        <li class="header__modal-item"><a href="#" class="header__modal-link">Discover LifeBlend</a></li>
+                        <li class="header__modal-item"><a href="#" class="header__modal-link">Explore</a></li>
+                        <li class="header__modal-item"><a href="#" class="header__modal-link">Inspiration</a></li>
+                        <li class="header__modal-item"><a href="#" class="header__modal-link">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
